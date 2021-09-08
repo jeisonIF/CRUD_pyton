@@ -2,8 +2,8 @@ import mysql.connector
 print('Iniciando')
 db = mysql.connector.connect(
     host='localhost',
-    user='root',
-    password='',
+    user='jeison',
+    password='sele',
     database='blog',
     port=3306
 )
@@ -21,6 +21,8 @@ def crearUsuario(nombre,email,contrasenna):
 
     #cerrar cursor
     cursor.close()
+
+
 crearUsuario('fernando','yob@gmail.com','12212121')
 
 cursor =db.cursor()
