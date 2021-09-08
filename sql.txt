@@ -1,0 +1,66 @@
+/*
+SQLyog Ultimate v12.4.3 (64 bit)
+MySQL - 8.0.23 : Database - crud_usuarios
+*********************************************************************
+*/
+
+/*!40101 SET NAMES utf8 */;
+
+/*!40101 SET SQL_MODE=''*/;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/`crud_usuarios` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+
+USE `crud_usuarios`;
+
+/*Table structure for table `usuarios` */
+
+DROP TABLE IF EXISTS `usuarios`;
+
+CREATE TABLE `usuarios` (
+  `id_usuarios` int unsigned NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `email` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `contrasena` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id_usuarios`)
+) ENGINE=InnoDB AUTO_INCREMENT=615 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `usuarios` */
+
+LOCK TABLES `usuarios` WRITE;
+
+insert  into `usuarios`(`id_usuarios`,`nombre`,`email`,`contrasena`) values 
+(1,'jeison','fernando@gmial.com','123oki123'),
+(5,'fernando','fernando@gmail.com','123oki123'),
+(51,'Jason','m.gwybflbb@xjyphauj.ke','imybk'),
+(52,'Patricia','o.nfswty@tsxfqrbpz.py','tyopd'),
+(53,'Kimberly','s.pqdn@mgffhenqq.mv','odsgk'),
+(54,'Mary','e.wksewough@grmp.az','tdhvy'),
+(55,'Donald','b.ydiuu@bmhs.bi','mrtbp'),
+(56,'Jeffrey','t.evxesxbmf@hpskdnve.ao','qqmdw'),
+(57,'Elizabeth','r.gux@gkvmrpbj.lk','abrbc'),
+(58,'George','r.pkekyhdru@iuferdmy.info','dpewz'),
+(59,'Michael','i.mbbfit@plrrckbb.nr','eyjfu'),
+(60,'Mark','w.koj@pahqdrnbzd.tz','etvsf'),
+(601,'Matthew','s.bfohgs@zfxcgqd.sk','vcdva'),
+(602,'Kevin','w.zsqtxyobo@quomaui.tz','bqjln'),
+(603,'Melissa','s.fqmnj@kzjhljttq.pn','zzxys'),
+(604,'Susan','x.nddsbpbwx@oumiqfveim.org.cn','oxsdo'),
+(605,'Barbara','e.svt@pfsnmer.ee','ewypj'),
+(606,'Robert','r.bhhub@unzginjl.as','cjxyj'),
+(607,'Karen','p.cdsivgrw@pjribs.gp','luocm'),
+(608,'Charles','q.tbxfvitv@bdhpzmk.es','xhpty'),
+(610,'Daniel','w.dgzpx@sucqmfnt.gov.cn','googg'),
+(612,'Gladys','mami@gmail.com','mami_mia'),
+(613,'seleini','magdelin2020@itp.edu.co','jeison2021'),
+(614,'edduar','edduar@gmail.com','edd098');
+
+UNLOCK TABLES;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
